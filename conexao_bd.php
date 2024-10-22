@@ -43,9 +43,8 @@ function retornarDados($sql) {
     if (mysqli_num_rows($resultado) > 0) {
         return $resultado;
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-        //return 0;
-    }
+        //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    return 0;
 }
 ?>
 
